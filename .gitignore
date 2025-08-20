@@ -1,0 +1,13 @@
+# Node, editors, OS
+node_modules/
+.DS_Store
+.vscode/
+*.log
+
+# build artifacts
+dist/
+build/
+
+# macOS
+.AppleDouble
+.LSOverride
