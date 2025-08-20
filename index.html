@@ -1,166 +1,430 @@
-<!DOCTYPE html>
+v<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <style>
+        @page {
+            size: A4;
+            margin: 0.5in;
+        }
+        
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-            line-height: 1.5;
+            padding: 0;
             color: black;
             background-color: white;
-            max-width: 800px;
-            margin: 0 auto;
-            border: none;
+            line-height: 1.15;
         }
         
         .header {
             text-align: center;
-            margin-bottom: 20px;
+            line-height: 1.15;
+            margin-bottom: 0;
         }
         
         .name {
             font-size: 14pt;
             font-weight: bold;
-            margin-bottom: 5px;
+            margin: 0;
+            line-height: 1.15;
         }
         
         .contact {
             font-size: 12pt;
-            margin-bottom: 2px;
+            font-weight: normal;
+            margin: 0;
+            line-height: 1.15;
+        }
+        
+        .single-space {
+            margin-top: 12pt;
+            margin-bottom: 0;
         }
         
         .section-title {
             font-size: 10.5pt;
             font-weight: bold;
-            margin-top: 15px;
-            margin-bottom: 8px;
+            margin-top: 12pt;
+            margin-bottom: 0;
             text-align: left;
+            line-height: 1.5;
         }
         
         .content {
             font-size: 10.5pt;
             text-align: left;
             line-height: 1.5;
+            font-weight: normal;
         }
         
-        .job-title {
-            font-style: italic;
-            margin-top: 10px;
-            margin-bottom: 5px;
-        }
-        
-        .job-company {
+        .job-header {
             display: flex;
             justify-content: space-between;
             font-style: italic;
+            font-size: 10.5pt;
+            margin-top: 12pt;
+            margin-bottom: 0;
+            line-height: 1.5;
         }
         
         ul {
-            margin: 5px 0;
+            margin: 0;
             padding-left: 20px;
+            line-height: 1.5;
         }
         
         li {
-            margin-bottom: 3px;
+            margin-bottom: 0;
+            font-size: 10.5pt;
+            line-height: 1.5;
         }
         
-        .skills-grid {
-            display: block;
-        }
-        
-        .skills-item {
-            margin-bottom: 3px;
-        }
-        
-        hr {
-            border: none;
-            height: 1px;
-            background-color: black;
-            margin: 8px 0;
+        .skills-section {
+            font-size: 10.5pt;
+            line-height: 1.5;
+            margin: 0;
         }
     </style>
 </head>
 <body>
+    <!-- Header Section: Font Size 14 Bold, 12 No Bold, 1.15 Spacing -->
     <div class="header">
         <div class="name">Epuri Chetan</div>
-        <div class="contact">+917013104229 | epuri.chetan@gmail.com | <span style="color: blue;">https://www.linkedin.com/in/chetan-e-810b8131a</span></div>
+        <div class="contact">+917013104229 | epuri.chetan@gmail.com | https://www.linkedin.com/in/chetan-e-810b8131a</div>
         <div class="contact">Vijayawada, Andhra Pradesh, India</div>
     </div>
 
+    <!-- Single Space Here - Below this point all font size is 10.5 and spacing is 1.5 -->
+    <div class="single-space"></div>
+
+    <!-- Education Section: Bold title, Do NOT Bold content -->
+    <div class="section-title">Education & Certificates</div>
     <div class="content">
-        <div class="section-title">Education & Certificates</div>
         <ul>
             <li>B.Tech in Computer Science and Engineering (IoT), Vellore Institute of Technology, Expected Graduation 2027</li>
             <li>Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</li>
             <li>Anthropic Introduction to Model Context Protocol Certification</li>
         </ul>
+    </div>
 
-        <div class="section-title">Work History, Projects, Internships</div>
-        
-        <div class="job-company">
-            <span style="font-style: italic;">Network Engineering Intern, Jio Platforms Limited</span>
-            <span style="font-style: italic;">June 2025 - July 2025</span>
-        </div>
+    <!-- Single Space Here -->
+    <div class="single-space"></div>
+
+    <!-- Work History Section: Bold this and nothing else -->
+    <div class="section-title">Work History, Projects, Internships</div>
+
+    <!-- Job 1: Italicize title, company, dates -->
+    <div class="job-header">
+        <span>Network Engineering Intern, Jio Platforms Limited</span>
+        <span>June 2025 to July 2025</span>
+    </div>
+    <div class="content">
         <ul>
             <li>Completed internship focused on Study and Support of 4G/5G Network Deployment working with telecommunications infrastructure and network optimization algorithms</li>
-            <li>Applied data structures and algorithms to analyze network performance data and implemented solutions for 4G/5G network deployment optimization</li>
-            <li>Collaborated with cross-functional engineering teams to support network infrastructure projects using Python and Java for data analysis and system monitoring</li>
+            <li>Applied data structures and algorithms to analyze network performance data and implemented solutions for 4G/5G network deployment optimization using Python and Java</li>
+            <li>Collaborated with cross-functional engineering teams to support network infrastructure projects implementing software development best practices for data analysis and system monitoring</li>
             <li>Gained hands-on experience with telecommunications protocols, network architecture design, and performance testing methodologies in production environment</li>
         </ul>
+    </div>
 
-        <div class="job-company">
-            <span style="font-style: italic;">Claude CLI-based MCP Tool</span>
-            <span style="font-style: italic;">Personal Project, 2024</span>
-        </div>
+    <!-- Single Space Here -->
+    <div class="single-space"></div>
+
+    <div class="job-header">
+        <span>Claude CLI-based MCP Tool</span>
+        <span>Personal Project, 2024</span>
+    </div>
+    <div class="content">
         <ul>
             <li>Developed command-line interface tool utilizing Claude's Model Context Protocol for AI interaction and automation workflows integrating data structures and algorithms for efficient processing</li>
-            <li>Implemented object-oriented programming principles in Python to create modular and scalable architecture supporting multiple workflow automations</li>
-            <li>Applied software development best practices including version control with Git and GitHub for collaborative development and code management</li>
+            <li>Implemented object-oriented programming principles in Python to create modular and scalable architecture supporting multiple workflow automations using software design patterns</li>
+            <li>Applied software development best practices including version control with Git and GitHub for collaborative development and code management with debugging and testing</li>
         </ul>
+    </div>
 
-        <div class="job-company">
-            <span style="font-style: italic;">Task Tracker Website</span>
-            <span style="font-style: italic;">Web Development Project, 2024</span>
-        </div>
+    <!-- Single Space Here -->
+    <div class="single-space"></div>
+
+    <div class="job-header">
+        <span>Task Tracker Website</span>
+        <span>Web Development Project, 2024</span>
+    </div>
+    <div class="content">
         <ul>
             <li>Built responsive task management web application using HTML5, CSS3, JavaScript, and Tailwind CSS implementing data structures for task organization and sorting algorithms for priority management</li>
-            <li>Designed and developed frontend user interface with modern UI/UX principles ensuring cross-browser compatibility and mobile responsiveness</li>
-            <li>Utilized JavaScript for dynamic functionality including real-time task updates, local storage management, and interactive user experience features</li>
+            <li>Designed and developed frontend user interface with modern UI/UX principles ensuring cross-browser compatibility and mobile responsiveness using problem-solving skills</li>
+            <li>Utilized JavaScript for dynamic functionality including real-time task updates, local storage management, and interactive user experience features with computational thinking</li>
         </ul>
+    </div>
 
-        <div class="job-company">
-            <span style="font-style: italic;">Dating Website - DevSoc25 CodeChef Hackathon</span>
-            <span style="font-style: italic;">Team Project - Frontend Developer, 2024</span>
-        </div>
+    <!-- Single Space Here -->
+    <div class="single-space"></div>
+
+    <div class="job-header">
+        <span>Dating Website - DevSoc25 CodeChef Hackathon</span>
+        <span>Team Project, 2024</span>
+    </div>
+    <div class="content">
         <ul>
-            <li>Collaborated with cross-functional team to develop dating platform frontend implementing algorithms for user matching and data filtering systems</li>
-            <li>Responsible for frontend development using HTML5, CSS3, and JavaScript creating intuitive user interface with responsive design principles</li>
-            <li>Applied problem-solving skills to optimize user experience through efficient data handling and interactive features during 48-hour hackathon timeframe</li>
+            <li>Collaborated with cross-functional team to develop dating platform frontend implementing algorithms for user matching and data filtering systems using object-oriented programming</li>
+            <li>Responsible for frontend development using HTML5, CSS3, and JavaScript creating intuitive user interface with responsive design principles and software engineering best practices</li>
+            <li>Applied problem-solving skills to optimize user experience through efficient data handling and interactive features during 48-hour hackathon timeframe using algorithm design</li>
         </ul>
+    </div>
 
-        <div class="job-company">
-            <span style="font-style: italic;">n8n AI Agent Automation</span>
-            <span style="font-style: italic;">Current Project, 2024-Present</span>
-        </div>
+    <!-- Single Space Here -->
+    <div class="single-space"></div>
+
+    <div class="job-header">
+        <span>n8n AI Agent Automation</span>
+        <span>Current Project, 2024 to Current</span>
+    </div>
+    <div class="content">
         <ul>
-            <li>Currently developing AI agent automation system using n8n workflow automation platform implementing machine learning frameworks and cloud computing principles</li>
-            <li>Integrating multiple APIs and services using Python and JavaScript to create automated workflows for data processing and analysis</li>
-            <li>Applied software engineering principles to design scalable automation solutions with focus on performance optimization and error handling</li>
+            <li>Currently developing AI agent automation system using n8n workflow automation platform implementing machine learning frameworks and cloud computing principles with Azure</li>
+            <li>Integrating multiple APIs and services using Python and JavaScript to create automated workflows for data processing and analysis with SQL database management</li>
+            <li>Applied software engineering principles to design scalable automation solutions with focus on performance optimization and error handling using debugging and testing methodologies</li>
         </ul>
+    </div>
 
-        <div class="section-title">Technical Skills</div>
-        <div class="skills-grid">
-            <div class="skills-item"><strong>Programming Languages:</strong> Python, Java, C++, JavaScript, HTML5, CSS3</div>
-            <div class="skills-item"><strong>Data Structures & Algorithms:</strong> Search algorithms, sorting algorithms, time complexity analysis, object-oriented programming</div>
-            <div class="skills-item"><strong>Web Development:</strong> Frontend development, Node.js basics, Tailwind CSS, responsive design</div>
-            <div class="skills-item"><strong>Tools & Technologies:</strong> Git, GitHub, SQL, Azure, Cloud Computing, Machine Learning Frameworks</div>
-            <div class="skills-item"><strong>Software Development:</strong> Version control, debugging, testing, software design patterns, engineering best practices</div>
-            <div class="skills-item"><strong>Problem Solving:</strong> Algorithm design, computational thinking, system design, requirement analysis</div>
-        </div>
+    <!-- Single Space Here -->
+    <div class="single-space"></div>
 
-        <div class="section-title">Coursework</div>
+    <!-- Technical Skills Section -->
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-section">
+        <strong>Programming Languages:</strong> Python, Java, C++, JavaScript, HTML5, CSS3<br>
+        <strong>Data Structures & Algorithms:</strong> Search algorithms, sorting algorithms, time complexity analysis, object-oriented programming<br>
+        <strong>Web Development<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        @page {
+            size: A4;
+            margin: 0.5in;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: black;
+            background-color: white;
+            line-height: 1.15;
+        }
+        
+        .header {
+            text-align: center;
+            line-height: 1.15;
+            margin-bottom: 0;
+        }
+        
+        .name {
+            font-size: 14pt;
+            font-weight: bold;
+            margin: 0;
+            line-height: 1.15;
+        }
+        
+        .contact {
+            font-size: 12pt;
+            font-weight: normal;
+            margin: 0;
+            line-height: 1.15;
+        }
+        
+        .single-space {
+            margin-top: 12pt;
+            margin-bottom: 0;
+        }
+        
+        .section-title {
+            font-size: 10.5pt;
+            font-weight: bold;
+            margin-top: 12pt;
+            margin-bottom: 0;
+            text-align: left;
+            line-height: 1.5;
+        }
+        
+        .content {
+            font-size: 10.5pt;
+            text-align: left;
+            line-height: 1.5;
+            font-weight: normal;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            font-style: italic;
+            font-size: 10.5pt;
+            margin-top: 12pt;
+            margin-bottom: 0;
+            line-height: 1.5;
+        }
+        
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            line-height: 1.5;
+        }
+        
+        li {
+            margin-bottom: 0;
+            font-size: 10.5pt;
+            line-height: 1.5;
+        }
+        
+        .skills-section {
+            font-size: 10.5pt;
+            line-height: 1.5;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section: Font Size 14 Bold, 12 No Bold, 1.15 Spacing -->
+    <div class="header">
+        <div class="name">Epuri Chetan</div>
+        <div class="contact">+917013104229 | epuri.chetan@gmail.com | https://www.linkedin.com/in/chetan-e-810b8131a</div>
+        <div class="contact">Vijayawada, Andhra Pradesh, India</div>
+    </div>
+
+    <!-- Single Space Here - Below this point all font size is 10.5 and spacing is 1.5 -->
+    <div class="single-space"></div>
+
+    <!-- Education Section: Bold title, Do NOT Bold content -->
+    <div class="section-title">Education & Certificates</div>
+    <div class="content">
+        <ul>
+            <li>B.Tech in Computer Science and Engineering (IoT), Vellore Institute of Technology, Expected Graduation 2027</li>
+            <li>Oracle Cloud Infrastructure 2025 Certified Generative AI Professional</li>
+            <li>Anthropic Introduction to Model Context Protocol Certification</li>
+        </ul>
+    </div>
+
+    <!-- Single Space Here -->
+    <div class="single-space"></div>
+
+    <!-- Work History Section: Bold this and nothing else -->
+    <div class="section-title">Work History, Projects, Internships</div>
+
+    <!-- Job 1: Italicize title, company, dates -->
+    <div class="job-header">
+        <span>Network Engineering Intern, Jio Platforms Limited</span>
+        <span>June 2025 to July 2025</span>
+    </div>
+    <div class="content">
+        <ul>
+            <li>Completed internship focused on Study and Support of 4G/5G Network Deployment working with telecommunications infrastructure and network optimization algorithms</li>
+            <li>Applied data structures and algorithms to analyze network performance data and implemented solutions for 4G/5G network deployment optimization using Python and Java</li>
+            <li>Collaborated with cross-functional engineering teams to support network infrastructure projects implementing software development best practices for data analysis and system monitoring</li>
+            <li>Gained hands-on experience with telecommunications protocols, network architecture design, and performance testing methodologies in production environment</li>
+        </ul>
+    </div>
+
+    <!-- Single Space Here -->
+    <div class="single-space"></div>
+
+    <div class="job-header">
+        <span>Claude CLI-based MCP Tool</span>
+        <span>Personal Project, 2024</span>
+    </div>
+    <div class="content">
+        <ul>
+            <li>Developed command-line interface tool utilizing Claude's Model Context Protocol for AI interaction and automation workflows integrating data structures and algorithms for efficient processing</li>
+            <li>Implemented object-oriented programming principles in Python to create modular and scalable architecture supporting multiple workflow automations using software design patterns</li>
+            <li>Applied software development best practices including version control with Git and GitHub for collaborative development and code management with debugging and testing</li>
+        </ul>
+    </div>
+
+    <!-- Single Space Here -->
+    <div class="single-space"></div>
+
+    <div class="job-header">
+        <span>Task Tracker Website</span>
+        <span>Web Development Project, 2024</span>
+    </div>
+    <div class="content">
+        <ul>
+            <li>Built responsive task management web application using HTML5, CSS3, JavaScript, and Tailwind CSS implementing data structures for task organization and sorting algorithms for priority management</li>
+            <li>Designed and developed frontend user interface with modern UI/UX principles ensuring cross-browser compatibility and mobile responsiveness using problem-solving skills</li>
+            <li>Utilized JavaScript for dynamic functionality including real-time task updates, local storage management, and interactive user experience features with computational thinking</li>
+        </ul>
+    </div>
+
+    <!-- Single Space Here -->
+    <div class="single-space"></div>
+
+    <div class="job-header">
+        <span>Dating Website - DevSoc25 CodeChef Hackathon</span>
+        <span>Team Project, 2024</span>
+    </div>
+    <div class="content">
+        <ul>
+            <li>Collaborated with cross-functional team to develop dating platform frontend implementing algorithms for user matching and data filtering systems using object-oriented programming</li>
+            <li>Responsible for frontend development using HTML5, CSS3, and JavaScript creating intuitive user interface with responsive design principles and software engineering best practices</li>
+            <li>Applied problem-solving skills to optimize user experience through efficient data handling and interactive features during 48-hour hackathon timeframe using algorithm design</li>
+        </ul>
+    </div>
+
+    <!-- Single Space Here -->
+    <div class="single-space"></div>
+
+    <div class="job-header">
+        <span>n8n AI Agent Automation</span>
+        <span>Current Project, 2024 to Current</span>
+    </div>
+    <div class="content">
+        <ul>
+            <li>Currently developing AI agent automation system using n8n workflow automation platform implementing machine learning frameworks and cloud computing principles with Azure</li>
+            <li>Integrating multiple APIs and services using Python and JavaScript to create automated workflows for data processing and analysis with SQL database management</li>
+            <li>Applied software engineering principles to design scalable automation solutions with focus on performance optimization and error handling using debugging and testing methodologies</li>
+        </ul>
+    </div>
+
+    <!-- Single Space Here -->
+    <div class="single-space"></div>
+
+    <!-- Technical Skills Section -->
+    <div class="section-title">Technical Skills</div>
+    <div class="skills-section">
+        <strong>Programming Languages:</strong> Python, Java, C++, JavaScript, HTML5, CSS3<br>
+        <strong>Data Structures & Algorithms:</strong> Search algorithms, sorting algorithms, time complexity analysis, object-oriented programming<br>
+        <strong>Web Development:</strong> Frontend development, Node.js basics, Tailwind CSS, responsive design<br>
+        <strong>Tools & Technologies:</strong> Git, GitHub, SQL, Azure, Cloud Computing, Machine Learning Frameworks<br>
+        <strong>Software Development:</strong> Version control, debugging, testing, software design patterns, engineering best practices<br>
+        <strong>Problem Solving:</strong> Algorithm design, computational thinking, system design, requirement analysis
+    </div>
+
+    <!-- Single Space Here -->
+    <div class="single-space"></div>
+
+    <!-- Coursework Section -->
+    <div class="section-title">Coursework</div>
+    <div class="content">
+        <ul>
+            <li>Data Structures and Algorithms: Search and sort algorithms, time complexity analysis, algorithmic problem solving</li>
+            <li>Web Development: Frontend and backend technologies, database management, full-stack development principles</li>
+            <li>Object-Oriented Programming: Design patterns, software architecture, code optimization and debugging techniques</li>
+        </ul>
+    </div>
+</body>
+</html>:</strong> Frontend development, Node.js basics, Tailwind CSS, responsive design<br>
+        <strong>Tools & Technologies:</strong> Git, GitHub, SQL, Azure, Cloud Computing, Machine Learning Frameworks<br>
+        <strong>Software Development:</strong> Version control, debugging, testing, software design patterns, engineering best practices<br>
+        <strong>Problem Solving:</strong> Algorithm design, computational thinking, system design, requirement analysis
+    </div>
+
+    <!-- Single Space Here -->
+    <div class="single-space"></div>
+
+    <!-- Coursework Section -->
+    <div class="section-title">Coursework</div>
+    <div class="content">
         <ul>
             <li>Data Structures and Algorithms: Search and sort algorithms, time complexity analysis, algorithmic problem solving</li>
             <li>Web Development: Frontend and backend technologies, database management, full-stack development principles</li>
