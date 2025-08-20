@@ -4,7 +4,7 @@
 This repository contains my résumé (cv2.pdf) and a small web page that lets people view or download it.
 
 How to view:
-- Web page (GitHub Pages): https://ChetanEpuri.github.io/resume/
+- Web page (GitHub Pages): https://ChetanEpuri.github.io/Resume/
 - Direct PDF (raw): https://raw.githubusercontent.com/ChetanEpuri/resume/main/cv2.pdf
 
 Notes:
